@@ -1,0 +1,45 @@
+{
+  "name": "vis-dht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development parcel index.html ",
+    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.0",
+    "bignumber.js": "^9.0.0",
+    "can-ndjson-stream": "^1.0.1",
+    "cytoscape": "^3.7.3",
+    "ndjson": "github:hugomrdias/ndjson#feat/readable-stream3",
+    "parcel-bundler": "latest",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-list": "^0.8.11"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browserlist": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "cross-env": "^5.1.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
